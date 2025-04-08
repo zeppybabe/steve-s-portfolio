@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Steve's Portfolio</title>
+    <link rel="icon" type="images/hero.jpg" href="images/hero.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style"  title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style"  title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style"  title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style"  title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style"  title="color-5" disabled>
+  </head>
+  <body>
+    [if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]
+    <!-- ** aside bar section ** -->
+    <div class ="aside">
+      <div class="logo">
+        <a href="#home" class=""><span>S</span>teve's.io</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#about" class=""><i class="fa fa-user"></i>About Me</a></li>
+        <li><a href="#services" class=""><i class="fa fa-list"></i>Skills</a></li>
+        <li><a href="#portfolio" class=""><i class="fa fa-briefcase"></i>Portfolio</a></li>
+        <li><a href="#contact" class=""><i class="fa fa-comments"></i>Contact</a></li>
+      </ul>
+    </div>
+    <!-- ** main content ** -->
+    <div class="main-content">
+    <section class="home active section" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="home-info padd-15">
+            <h3 class="hello"> Hello, my name is <span class="names"name></span></h3>
+            <h3 class="my-profession">I' m a <span class="typing"></span></h3>
+            <p>Welcome to my portfolio web page! I appreciate you stopping by so feel free play around with the website and visit my other pages!</p>
+          </div>
+          <div class="home-img padd-15">
+            <img src="images/profile.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ** about section ** -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title padd-15">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-content padd-15">
+            <div class="row">
+              <div class="about-text padd-15">
+                <h3>I'm Steve Padilla-Benitez and <span> look forward to working with you!</span></h3>
+                <p>This is my website in HTML, CSS, and Javascript. Following a template and working on it, I was able to replicate something that is simple for a portfolio type page. It is not crazy but it has what it needs to represent my abilities. Currently, I am working on my Bachelor's in Business Administration: Information Sciences. Now, you may be wondering, "Why are you making a website by yourself if you are a Business Major?". The answer to this is my extreme interest in Computer Science! Computer Science is an interest and has been there since I started my first website in a high school class in Mexico. Later on, when it came to picking my major in college, I felt inclined to pick Computer Science. Alas, when prompted with the many paths that can be chosen, I was undecided. When taking this hiatus, I spent my time self-teaching Linux, Virtual Machines, Penetration Testing, Programming languages and much more topics I had interest in. When delving back into college, I realized I wanted to learn something that I didn't already know and that was the Business side. It has been a journey but I am glad to have learned a lot from the years prior. Navigate through this website with the sidebar and if you have any issues, let me know and I'll fix them as soon as I can. Thank you for dropping by!</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="personal-info padd-15">
+                <div class="row">
+                  <div class="info-item padd-15">
+                    <p>Degree : <span>BA: IS</span></p>
+                  </div>
+                  <div class="info-item padd-15">
+                    <p>Progress : <span>1 year left</span></p>
+                  </div>
+                  <div class="info-item padd-15">
+                    <p>Freelance : <span>Available</span></p>
+                  </div>
+                  <div class="info-item padd-15">
+                    <p>Job : <span>CS Tutor</span></p>
+                  </div>
+                  <div class="info-item padd-15">
+                    <p>City : <span>Hawthorne</span></p>
+                  </div>
+                  <div class="info-item padd-15">
+                    <p>State : <span>California</span></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="buttons padd-15">
+                    <a href="images/resume.pdf" class="btn" download>View / Download Resume</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- ** education items ** -->
+                <div class="education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2017-2020
+                          </h3>
+                          <details>
+                            <summary>El Camino College</summary>
+                            <p class="timeline-text">Participated in discovery classes, general education classes, and for fun classes.</p>
+                          </details>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2022 - 2024
+                          </h3>
+                          <details>
+                            <summary>Santa Monica College</summary>
+                            <p class="timeline-text">Decided on my career path and completed my required courses to transfer to a UC or CSU within California. Focus is on Business, including accounting, economics, and mathematics. Achieved an : A.S in Business Administration 2.0 & Intersegmental General Education Transfer Curriculum.</p>
+                          </details>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2024 - Current
+                          </h3>
+                          <details>
+                            <summary>CSU Dominguez Hills</summary>
+                            <p class="timeline-text">Attending and working on a Bachelors that focus more on the technical aspect of a business. Working on a  B.S. in Business Administration: Information Systems.</p>
+                          </details>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ** experience items ** -->
+                <div class="experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- === timeline item === -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2013 - 2014
+                          </h3>
+                          <details>
+                            <summary>Web Development</summary>
+                            <p class="timeline-text">Teacher aid for Colegio Union Mexico, located in the state of Jalisco. Assisted students in understanding the fundamentals of creating a personal website using Notepad, HTML, and CSS. Translated common terms into Spanish.</p>
+                          </details>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2024 - Current
+                          </h3>
+                          <details>
+                            <summary>CSUDH Toro Auxiliary Partner</summary>
+                            <p class="timeline-text">Tutored Java for students who needed help or asked. Aided with lecture, mathematics, SAT prep, and educational poster making. Fostered multiple documents to help students understand and made a comprehensive list for scholarships high school juniors and seniors can apply to.</p>
+                          </details>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2025-Current
+                          </h3>
+                          <details>
+                            <summary>CSUDH Computer Science Scholar</summary>
+                            <p class="timeline-text">Lectured students in elementary school and middle school about coding concepts and robotics. Brought a 5 week plan into fruition that allowed students to learn Playgrounds, block code from with a Spheros, and research their own STEM career.</p>
+                          </details>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ** service section ** -->
+    <section class="service section" id="services">
+    <div class="container">
+    <div class="row">
+    <div class="section-title padd-15">
+    <h2>Skills</h2>
+    </div>
+    </div>
+    <div class="row">
+    <div class="service-item padd-15">
+    <div class="service-item-inner">
+    <div class="icon">
+    <i class="fa fa-mobile-alt"></i>
+    </div>
+    <h4>Adaptable</h4>
+    <p>I will learn new concepts in order to achieve my goals. This is a norm for any forward moving person and company.</p>
+    </div>
+    </div>
+    <div class="service-item padd-15">
+    <div class="service-item-inner">
+    <div class="icon">
+    <i class="fa fa-laptop-code"></i>
+    </div>
+    <h4>Knowledgeable</h4>
+    <p>Known languages are Java, Javascript, and Python. I build projects based on these, and NoSQL databases.</p>
+    </div>
+    </div>
+    <div class="service-item padd-15">
+    <div class="service-item-inner">
+    <div class="icon">
+    <i class="fa fa-palette"></i>
+    </div>
+    <h4>Creative</h4>
+    <p>Can graphically design using HTML, CSS, Canva, Tinkercad, UltiCura, and CanvasWorkspace for vinyl printing.</p>
+    </div>
+    </div>
+    <div class="service-item padd-15">
+    <div class="service-item-inner">
+    <div class="icon">
+    <i class="fa fa-code"></i>
+    </div>
+    <h4>Security Principles</h4>
+    <p>Policies involving security protocols followed so that services and products stay consistent to cybersecurity protocols.</p>
+    </div>
+    </div>
+    <div class="service-item padd-15">
+    <div class="service-item-inner">
+    <div class="icon">
+    <i class="fa fa-search"></i>
+    </div>
+    <h4>Researcher</h4>
+    <p>Perform research to see if the latest quality procedures are being used as well as precise and up-to-date data.</p>
+    </div>
+    </div>
+    <div class="service-item padd-15">
+    <div class="service-item-inner">
+    <div class="icon">
+    <i class="fa fa-bullhorn"></i>
+    </div>
+    <h4>Communicator</h4>
+    <p>Respond promptly with accurate terminology and consideration. Can curate projects to personal or management needs.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- ** portfolio section ** -->
+    <section class="portfolio section" id="portfolio">
+    <div class="container">
+    <div class="row">
+    <div class="section-title padd-15">
+    <h2>Projects</h2>
+    </div>
+    </div>
+    <div class="row">
+    <div class="portfolio-heading padd-15">
+    <h2>Click To Zoom In :</h2>
+    </div>
+    </div>
+    <div class="row" id="gallery">
+    <div class="portfolio-item padd-15">
+    <div class="portfolio-item-inner shadow-dark">
+    <div class="portfolio-img">
+    <img src="images/1.jpg" class="img" id="img1" onclick="change(this)">
+    </div>
+    </div>
+    </div>
+    <div class="portfolio-item padd-15">
+    <div class="portfolio-item-inner shadow-dark">
+    <div class="portfolio-img">
+    <img src="images/2.jpg" class="img" id="img1" onclick="change(this)">
+    </div>
+    </div>
+    </div>
+    <div class="portfolio-item padd-15">
+    <div class="portfolio-item-inner shadow-dark">
+    <div class="portfolio-img">
+    <img src="images/3.jpg" class="img" id="img1" onclick="change(this)">
+    </div>
+    </div>
+    </div>
+    <div class="portfolio-item padd-15">
+    <div class="portfolio-item-inner shadow-dark">
+    <div class="portfolio-img">
+    <img src="images/4.jpg" class="img" id="img1" onclick="change(this)">
+    </div>
+    </div>
+    </div>
+    <div class="portfolio-item padd-15">
+    <div class="portfolio-item-inner shadow-dark">
+    <div class="portfolio-img">
+    <img src="images/5.jpg" class="img" id="img1" onclick="change(this)">
+    </div>
+    </div>
+    </div>
+    <div class="portfolio-item padd-15">
+    <div class="portfolio-item-inner shadow-dark">
+    <div class="portfolio-img">
+    <img src="images/6.jpg" class="img" id="img1" onclick="change(this)">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- ** contact section ** -->
+    <section class="contact section" id="contact">
+    <div class="container">
+    <div class="row">
+    <div class="section-title padd-15">
+    <h2>Contact Me</h2>
+    </div>
+    </div>
+    <h3 class="contact-title">Points of Contacts</h3>
+    <div class="row">
+    <div class="contact-info-item padd-15">
+    <div class="icon"><i class="fa fa-phone"></i></div>
+    <h4>Phone</h4>
+    <p>(213) 282-3960</p>
+    </div>
+    <div class="contact-info-item padd-15">
+    <div class="icon"><i class="fa fa-envelope"></i></div>
+    <h4>Email</h4>
+    <p>stevepadilla1999@gmail.com</p>
+    </div>
+    <div class="contact-info-item padd-15">
+    <div class="icon"><i class="fa fa-globe"></i></div>
+    <h4>Websites</h4>
+    <p>www.stevepadilla-b.io</p>
+    </div>
+    <div class="contact-info-item padd-15">
+    <div class="icon"><i class="fa fa-globe-americas"></i></div>
+    <h4>Location</h4>
+    <p>North America</p>
+    </div>
+    </div>
+    <h3 class="contact-title">Have Any Inquiries?</h3>
+    <h4 class="contact-sub-title">Send me a direct message.</h4>
+    <div class="row">
+    <div class="contact-form padd-15">
+    <div class="row">
+    <div class="form-item col-6 padd-15">
+    <div class="form-group">
+      <form id="contactForm" action="https://formspree.io/f/mdkeppog" method="POST">
+        <input type="text" class="form-control" name="name" placeholder="Name" required>
+        </div>
+        </div>
+        <div class="form-item col-6 padd-15">
+        <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="Email" required>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-item col-12 padd-15">
+        <div class="form-group">
+        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-item col-12 padd-15">
+        <div class="form-group">
+        <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+        </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-item col-12 padd-15">
+        <div class="form-group">
+        <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- ** Blank Section for Visual Start ** -->
+    <section class="blank section" id="blank">
+    <div class="blank">
+    <div class="blank-start">
+    <div class="blank-end">
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>
+    <!-- ** Style Swither ** -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas "></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js" async defer></script>
+    <script src="js/style-switcher.js" async defer></script>
+  </body>
+</html>
