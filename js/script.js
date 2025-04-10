@@ -84,7 +84,7 @@ function formReset() {
         const formData = new FormData(form);
 
         try {
-            const response = await fetch("https://formspree.io/f/mdkeppog", {
+            const response = await fetch("/.netlify/functions/submitForm", {
                 method: "POST",
                 body: formData,
                 headers: {
