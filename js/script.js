@@ -27,7 +27,7 @@ if (nav) {
 
         a.addEventListener("click", function () {
             // Remove 'back-section' from all sections
-            allSection.forEach(section => section.classList.remove("back-sectionyy"));
+            allSection.forEach(section => section.classList.remove("back-section"));
 
             // Remove active class and set back-section properly
             navList.forEach((navItem, j) => {
@@ -43,11 +43,6 @@ if (nav) {
 
             // Show the corresponding section
             showSection(this);
-
-            // Close the aside menu on small screens
-            if (window.innerWidth < 1200) {
-                asideSectionTogglerBtn();
-            }
         });
     }
 }

@@ -140,6 +140,7 @@ ul
 }
 .btn
 {
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -303,7 +304,7 @@ ul
 {
     margin-right: 15px;
 }
-/** home */
+/** Home */
 .home
 {
     min-height: 100vh;
@@ -377,7 +378,7 @@ h3.my-profession
     border-radius: 5px;
     height: 400px;
 }
-/** about **/
+/** About **/
 .about .about-content
 {
     flex: 0 0 100%;
@@ -440,52 +441,6 @@ h3.my-profession
 {
     margin-right: 15px;
     margin-top: 10px;
-}
-.about .about-content .skills
-{
-    flex: 0 0 40%;
-    max-width: 40%;
-    margin-top: 40px;
-}
-.about .about-content .skills .skill-item
-{
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 25px;
-}
-.about .about-content .skills .skill-item h5
-{
-    line-height: 40px;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
-    text-transform: capitalize;
-}
-.about .about-content .skills .skill-item .progress
-{
-    background-color: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-}
-.about .about-content .skills .skill-item .progress .progress-in
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: var(--skin-color);
-}
-.about .about-content .skills .skill-item .skill-percent
-{
-    position: absolute;
-    right: 0;
-    color: var(--text-black-900);
-    top: -40px;
-    font-weight: 400;
-    line-height: 40px;
 }
 .about .about-content .education,
 .about .about-content .experience
@@ -554,7 +509,7 @@ summary:hover
     font-weight: bold;
     font-style: italic;
 }
-/** for Chrome/Safari**/
+/** For Chrome/Safari **/
 summary::-webkit-details-marker 
 {
     display: none;
@@ -598,18 +553,18 @@ summary::-webkit-details-marker
 {
     margin-right: 5px;
 }
-/** service **/
-.service .container
+/** Skills  **/
+.skills .container
 {
     padding-bottom: 40px;
 }
-.service .service-item
+.skills .skills-item
 {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
-.service .service-item .service-item-inner
+.skills .skills-item .skills-item-inner
 {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
@@ -618,11 +573,11 @@ summary::-webkit-details-marker
     text-align: center;
     transition: all 0.3s ease;
 }
-.service .service-item .service-item-inner:hover
+.skills .skills-item .skills-item-inner:hover
 {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-.service .service-item .service-item-inner .icon
+.skills .skills-item .skills-item-inner .icon
 {
     height: 60px;
     width: 60px;
@@ -632,22 +587,22 @@ summary::-webkit-details-marker
     text-align: center;
     transition: all 0.3s ease;
 }
-.service .service-item .service-item-inner .icon .fa 
+.skills .skills-item .skills-item-inner .icon .fa 
 {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
 }
-.service .service-item .service-item-inner:hover .icon
+.skills .skills-item .skills-item-inner:hover .icon
 {
     background-color: var(--skin-color);
 }
-.service .service-item .service-item-inner:hover .icon .fa
+.skills .skills-item .skills-item-inner:hover .icon .fa
 {
     font-size: 25px;
     color: white;
 }
-.service .service-item .service-item-inner h4
+.skills .skills-item .skills-item-inner h4
 {
     font-size: 14px;
     margin-bottom: 15px;
@@ -655,13 +610,13 @@ summary::-webkit-details-marker
     font-weight: 700;
     text-transform: capitalize;
 }
-.service .service-item .service-item-inner p
+.skills .skills-item .skills-item-inner p
 {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
 }
-/** portfolio **/
+/** Portfolio **/
 .portfolio .portfolio-heading
 {
     flex: 0 0 100%;
@@ -696,10 +651,10 @@ summary::-webkit-details-marker
     border-radius: 10px;
     z-index: 1;
     display: block;
-    width: 90vw;            /* Almost full width on all screens */
-    max-width: 1200px;      /* Don't go past this on big screens */
+    width: 90vw;            /* 90 is almost FS on all screens. */
+    max-width: 1200px;      /* Limit for usability sake. */
     height: auto;
-    max-height: 90vh;       /* Prevent it from overflowing vertically */
+    max-height: 90vh;       /* Prevent it from overflowing vertically. */
     position: fixed;
     left: 50%;
     top: 50%;
@@ -710,7 +665,7 @@ summary::-webkit-details-marker
     overflow-y: auto;
     transition: all 0.3s ease-out;
 }
-/** contact **/
+/** Contact **/
 .contact-title
 {
     color: var(--skin-color);
@@ -786,7 +741,6 @@ summary::-webkit-details-marker
     padding: 10px 25px;
     font-size: 16px;
     color: var(--text-black-700);
-    transform: all 0.3s ease;
 }
 .contact .contact-form .form-item .form-control:focus
 {
@@ -796,20 +750,43 @@ summary::-webkit-details-marker
 {
     height: 140px;
 }
-.contact .contact-form .btn
-{
-    height: 40px;
-    padding: 0 50px;
-    left: 50px;
-}
 .contact .contact-form .form-group
 {
-    text-align: center;
+    text-align: center; /* Centers submit button */
 }
+
 .contact .contact-form .form-group .btn
 {
     display: inline-block;
     cursor: pointer;
+}
+@media (max-width:1575px)
+{
+    .aside
+    {
+        left: -270px;
+    }
+    .aside.open
+    {
+        left: 0;
+    }
+    .aside .nav-toggler
+    {
+        display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open
+    {
+        left : 300px;
+    }
+    .section
+    {
+        left: 0;
+    }
+    .section.open
+    {
+        left: 270px;
+    }
 }
 @media (max-width:1199px)
 {
@@ -838,17 +815,12 @@ summary::-webkit-details-marker
     {
         left: 270px;
     }
-    .about .about-content .personal-info .info-item p span
-    {
-        display: block;
-        margin-left: 0;
-    }
 }
 @media (max-width:991px)
 {
     .conact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item
+    .sk .sk-item
     {
         flex: 0 0 50%;
         max-width: 50%;
@@ -868,10 +840,9 @@ summary::-webkit-details-marker
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item,
+    .skills .skills-item,
     .about .about-content .experience,
     .about .about-content .education,
-    .about .about-content .skills,
     .about .about-content .personal-info
     {
         flex: 0 0 100%;

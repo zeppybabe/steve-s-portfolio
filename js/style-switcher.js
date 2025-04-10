@@ -1,18 +1,18 @@
-// Style Switcher Toggle
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-if (styleSwitcherToggle) {
+const styleSwitcher = document.querySelector(".style-switcher");
+
+if (styleSwitcherToggle && styleSwitcher) {
     styleSwitcherToggle.addEventListener("click", () => {
-        document.querySelector(".style-switcher").classList.toggle("open");
+        styleSwitcher.classList.toggle("open");
+
+        // Auto-close after 5 seconds (5000 ms)
+        if (styleSwitcher.classList.contains("open")) {
+            setTimeout(() => {
+                styleSwitcher.classList.remove("open");
+            }, 13525); // Adjust timing as needed
+        }
     });
 }
-
-// Close style switcher when scrolling
-window.addEventListener("scroll", () => {
-    const switcher = document.querySelector(".style-switcher");
-    if (switcher && switcher.classList.contains("open")) {
-        switcher.classList.remove("open");
-    }
-});
 
 // Function to Set and Store Active Style
 const alternateStyles = document.querySelectorAll(".alternate-style");

@@ -29,7 +29,6 @@
     margin-right: 25px;
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
-    transition: all 0.3s ease;
     border-radius: 50%;
 }
 .style-switcher .s-icon i
@@ -41,9 +40,13 @@
 {
     top: 0;
 }
-.style-switcher .fa-spin
+.style-switcher-toggler.s-icon i 
 {
     animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 .style-switcher .day-night
 {
@@ -69,6 +72,7 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .style-switcher .color-1
 {
